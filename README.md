@@ -19,17 +19,17 @@ Landing page profissional da Agência Prodev, focada em conversão e entrega de 
 
 ## 📁 Estrutura do Projeto
 
-├── index.html # Página principal
-├── robots.txt # Configuração para crawlers
-├── sitemap.xml # Mapa do site para SEO
-├── assets/
-│ ├── css/
-│ │ └── styles.css # Estilos principais
-│ ├── js/
-│ │ └── script.js # Interatividade
-│ └── images/
-│ └── prodev_logo_limpa_1.png
-└── README.md
+- ├── index.html # Página principal
+- ├── robots.txt # Configuração para crawlers
+- ├── sitemap.xml # Mapa do site para SEO
+- ├── assets/
+- │ ├── css/
+- │ │ └── styles.css # Estilos principais
+- │ ├── js/
+- │ │ └── script.js # Interatividade
+- │ └── images/
+- │ └── prodev_logo_limpa_1.png
+- └── README.md
 
 
 ## 🚀 Como Usar
