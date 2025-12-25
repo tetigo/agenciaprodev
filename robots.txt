@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.agenciaprodev.com.br/sitemap.xml
+Sitemap: https://agenciaprodev.com.br/sitemap.xml
