@@ -85,7 +85,7 @@
         
         <p>
           Criamos soluções tecnológicas personalizadas que impulsionam seu negócio. 
-          Sites profissionais, sistemas customizados e automações inteligentes.
+          Sites profissiona sistemas customizados e automações inteligentes.
         </p>
         
         <div class="hero-buttons">
@@ -412,17 +412,17 @@
           </div>
         </div>
         
-        <!-- <form class="contact-form" onsubmit="handleSubmit(event)"> -->
-        <form 
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <!-- <form 
           action="https://formsubmit.co/tetigo@gmail.com"
           method="POST"
           enctype="multipart/form-data"
           class="contact-form"
-        >
+        > -->
         <input type="hidden" name="_subject" value="Novo contato - Agencia Prodev">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://agenciaprodev.com.br/index.html?enviado=sucesso">
+        <!-- <input type="hidden" name="_next" value="https://agenciaprodev.com.br/index.html?enviado=sucesso"> -->
         
           <div class="form-row">
             <div class="form-group">
@@ -463,6 +463,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
           </button>
         </form>
+        <div id="formSuccess" class="form-success">
+          ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+        </div>
       </div>
     </div>
   </section>
@@ -504,9 +507,48 @@
     
     // Form submission
     function handleSubmit(e) {
-      e.preventDefault();
-      alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
-    }
-  </script>
+    e.preventDefault();
+
+    const form = e.target;
+    const successBox = document.getElementById('formSuccess');
+    const button = form.querySelector('button[type="submit"]');
+
+    button.disabled = true;
+    button.innerHTML = 'Enviando...';
+
+    fetch("https://formsubmit.co/ajax/tetigo@gmail.com", {
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success === "true") {
+        form.reset();
+        document.getElementById('char-count').textContent = '0';
+
+        successBox.style.display = 'block';
+
+        setTimeout(() => {
+          successBox.style.display = 'none';
+        }, 4000);
+      } else {
+        alert("Erro ao enviar. Tente novamente.");
+      }
+    })
+    .catch(() => {
+      alert("Erro de conexão. Tente novamente.");
+    })
+    .finally(() => {
+      button.disabled = false;
+      button.innerHTML = `
+        Enviar Mensagem
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m22 2-7 20-4-9-9-4Z"/>
+          <path d="M22 2 11 13"/>
+        </svg>
+      `;
+    });
+  }
+  </script>  
 </body>
 </html>
