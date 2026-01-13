@@ -1,671 +1,512 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- SEO Básico -->
-        <title>Agência Prodev - Sites Profissionais em 7 Dias | Zero Mensalidade</title>
-        <meta name="description" content="Sites profissionais entregues em 7 dias. 100% responsivo, sem mensalidade, com hospedagem grátis. Transforme sua presença digital hoje!">
-        <meta name="keywords" content="criação de sites, site profissional, landing page, desenvolvimento web, site em 7 dias, site sem mensalidade, agência web, sites responsivos">
-        <meta name="author" content="Agência Prodev">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://agenciaprodev.com.br">
-        
-        <!-- Open Graph (Facebook/WhatsApp) -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://agenciaprodev.com.br">
-        <meta property="og:title" content="Agência Prodev - Sites Profissionais em 7 Dias | Zero Mensalidade">
-        <meta property="og:description" content="Sites profissionais entregues em 7 dias. 100% responsivo, sem mensalidade, com hospedagem grátis. Transforme sua presença digital hoje!">
-        <meta property="og:image" content="https://agenciaprodev.com.br/assets/images/prodev_logo_og_image.png">
-        <meta property="og:locale" content="pt_BR">
-        <meta property="og:site_name" content="Agência Prodev">
-        
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://agenciaprodev.com.br">
-        <meta name="twitter:title" content="Agência Prodev - Sites Profissionais em 7 Dias">
-        <meta name="twitter:description" content="Sites profissionais entregues em 7 dias. 100% responsivo, sem mensalidade, com hospedagem grátis.">
-        <meta name="twitter:image" content="https://agenciaprodev.com.br/assets/images/prodev_logo_limpa_1.png">
-        
-        <!-- Schema.org (Dados Estruturados) -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Agência Prodev",
-          "image": "https://agenciaprodev.com.br/assets/images/prodev_logo_limpa_1.png",
-          "@id": "https://agenciaprodev.com.br",
-          "url": "https://agenciaprodev.com.br",
-          "telephone": "+5511982500582",
-          "priceRange": "R$ 997 - R$ 4.997",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "São Paulo",
-            "addressLocality": "São Paulo",
-            "addressRegion": "SP",
-            "addressCountry": "BR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -23.5505,
-            "longitude": -46.6333
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://linkedin.com/in/tiago-mendes-developer/",
-            "https://github.com/tetigo"
-          ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "50"
-          }
-        }
-        </script>
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="prodev_logo_limpa_1.png">
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência Prodev - Desenvolvimento de Software Sob Medida</title>
+  <meta name="description" content="A Agência Prodev cria soluções tecnológicas personalizadas: sites profissionais, sistemas sob medida e automações inteligentes com N8N.">
+  <meta name="author" content="Agência Prodev">
+  <meta name="keywords" content="desenvolvimento de software, sites profissionais, automações N8N, sistemas personalizados">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://agenciaprodev.com.br">
+
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agência Prodev - Desenvolvimento de Software Sob Medida">
+  <meta property="og:description" content="Criamos soluções tecnológicas personalizadas que impulsionam seu negócio.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://agenciaprodev.com.br/assets/images/prodev_logo_og_image.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Agência Prodev">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agência Prodev - Desenvolvimento de Software Sob Medida">
+  <meta name="twitter:description" content="Criamos soluções tecnológicas personalizadas que impulsionam seu negócio.">
+  
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="assets/images/prodev_logo_limpa_1.png" alt="Agência Prodev - Criação de Sites Profissionais">
-            </div>
-            <a href="https://wa.me/5511982500582?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes%20da%20Prodev" 
-               class="btn-whatsapp-header" target="_blank">
-                Falar no WhatsApp
-            </a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <div class="navbar-logo-circle">
+          <img src="assets/images/prodev_logo_limpa_1.png" alt="Agência Prodev">
         </div>
-    </header>
+        <span>Agência Prodev</span>
+      </a>
+      
+      <div class="navbar-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+      </div>
+      
+      <a href="#contato" class="btn-primary navbar-cta">
+        Solicitar Orçamento
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      
+      <button class="mobile-menu-btn" onclick="toggleMenu()">
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+    
+    <div class="container">
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#servicos" onclick="toggleMenu()">Serviços</a>
+        <a href="#portfolio" onclick="toggleMenu()">Portfólio</a>
+        <a href="#sobre" onclick="toggleMenu()">Sobre Nós</a>
+        <a href="#contato" onclick="toggleMenu()">Contato</a>
+        <a href="#contato" class="btn-primary" style="margin-top: 1rem; width: fit-content;" onclick="toggleMenu()">
+          Solicitar Orçamento
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Seu Negócio <span class="highlight">Sem Presença Digital</span> Está Perdendo Clientes Todos os Dias
-                </h1>
-                <p class="hero-subtitle">
-                    Enquanto seus concorrentes aparecem no Google, você fica invisível. 
-                    <strong>Isso acaba hoje.</strong>
-                </p>
-                <div class="hero-features">
-                    <div class="feature-item">
-                        <span class="check-icon">✓</span>
-                        <span>Site profissional em <strong>7 dias</strong></span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="check-icon">✓</span>
-                        <span><strong>Zero mensalidade</strong> - pague uma vez só</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="check-icon">✓</span>
-                        <span>Hospedagem <strong>grátis para sempre</strong></span>
-                    </div>
-                </div>
-                <a href="#pacotes" class="btn-primary pulse">
-                    Ver Pacotes que Convertem →
-                </a>
-                <!-- <p class="hero-guarantee">🎯 "Garantia: Se não aparecer quando buscarem pelo nome da sua empresa em 30 dias, devolvemos 100%"</p> -->
-            </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('assets/images/hero-bg.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <div style="max-width: 56rem;">
+        <div class="badge-tag" style="margin-bottom: 1.5rem;">
+          Transformando Ideias em Soluções Digitais
         </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="problem-section">
-        <div class="container">
-            <h2 class="section-title">Você Já Passou Por Isso?</h2>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">😰</div>
-                    <h3>Cliente Pergunta: "Você tem site?"</h3>
-                    <p>E você responde "ainda não" enquanto vê o cliente ir embora</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">💸</div>
-                    <h3>Paga Mensalidade Caríssima</h3>
-                    <p>R$ 200, R$ 300, R$ 500 por mês... e o site nem aparece no Google</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">⏰</div>
-                    <h3>Promessa de 3 Meses</h3>
-                    <p>E quando entrega, está desatualizado e não funciona no celular</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🔍</div>
-                    <h3>Invisível no Google</h3>
-                    <p>Seus clientes procuram você, mas encontram só a concorrência</p>
-                </div>
-            </div>
+        
+        <h1>Desenvolvimento de Software Sob Medida</h1>
+        
+        <p>
+          Criamos soluções tecnológicas personalizadas que impulsionam seu negócio. 
+          Sites profissionais, sistemas customizados e automações inteligentes.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="#contato" class="btn-primary">
+            Começar Projeto
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#portfolio" class="btn-secondary">Ver Portfólio</a>
         </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="solution-section">
-        <div class="container">
-            <h2 class="section-title">A Solução Que Você Precisa <span class="highlight">HOJE</span></h2>
-            <p class="solution-intro">
-                Não é promessa. É <strong>resultado garantido em 7 dias</strong>. 
-                Sem enrolação. Sem mensalidade. Sem surpresas.
-            </p>
-        </div>
-    </section>
-
-    <!-- Packages Section -->
-    <section id="pacotes" class="packages-section">
-        <div class="container">
-            <div class="packages-header">
-                <h2 class="section-title">🧠 Pacotes Que <span class="highlight">CONVERTEM</span></h2>
-                <p class="section-subtitle">Escolha o que seu negócio precisa agora</p>
-            </div>
-            
-            <div class="packages-grid">
-                <!-- Package 1: Site Express -->
-                <div class="package-card featured">
-                    <div class="package-badge">🔥 MAIS POPULAR</div>
-                    <div class="package-header">
-                        <h3>🔥 Site Profissional Express</h3>
-                        <div class="package-price">
-                            <span class="price-old">De R$ 2.997</span>
-                            <span class="price-new">R$ 1.497</span>
-                            <span class="price-note">ou 12x de R$ 149</span>
-                        </div>
-                    </div>
-                    <div class="package-features">
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Entrega em 7 dias</strong> - não é promessa, é garantia</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>100% responsivo</strong> - perfeito no celular, tablet e PC</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Botão WhatsApp</strong> - cliente clica e já fala com você</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Google Meu Negócio</strong> - apareça quando te procurarem</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Hospedagem grátis</strong> - para sempre, sem custo extra</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Sem mensalidade</strong> - pague uma vez, use para sempre</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>SEO básico incluído</strong> - apareça no Google</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Suporte por 30 dias</strong> - ajustes e correções</span>
-                        </div>
-                    </div>
-                    <a href="https://wa.me/5511982500582?text=Olá!%20Quero%20o%20pacote%20Site%20Profissional%20Express%20por%20R$%201.997" 
-                       class="btn-package" target="_blank">
-                        Quero Agora - 7 Dias
-                    </a>
-                    <p class="package-note">⚡ Últimas 3 vagas desta semana</p>
-                </div>
-
-                <!-- Package 2: Landing Page -->
-                <div class="package-card landing-pro">
-                    <div class="package-badge">⭐ MAIS CLIENTES</div>
-                    <div class="package-header">
-                        <h3>⭐ Landing Page que Vende</h3>
-                        <div class="package-price">
-                            <span class="price-old">De R$ 1.997</span>
-                            <span class="price-new">R$ 497</span>
-                            <span class="price-note">ou 10x de R$ 49</span>
-                        </div>
-                    </div>
-                    <div class="package-features">
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Entrega em 5 dias</strong> - ainda mais rápido</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Copy persuasiva</strong> - textos que convertem</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Formulário de captura</strong> - colete leads automaticamente</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Integração WhatsApp</strong> - leads direto no seu celular</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Design moderno</strong> - impressiona na primeira vista</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>100% responsivo</strong> - funciona em qualquer tela</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Hospedagem grátis</strong> - sem custo mensal</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Sem mensalidade</strong> - pague uma vez só</span>
-                        </div>
-                    </div>
-                    <a href="https://wa.me/5511982500582?text=Olá!%20Quero%20o%20pacote%20Landing%20Page%20que%20Vende%20por%20R$%20997" 
-                       class="btn-package" target="_blank">
-                        Quero Agora - 5 Dias
-                    </a>
-                </div>
-
-                <!-- Package 3: Sistema Web -->
-                <div class="package-card personalized">
-                    <div class="package-badge">🚀 PERSONALIZADO</div>
-                    <div class="package-header">
-                        <h3>🚀 Sistema Web Completo</h3>
-                        <div class="package-price">
-                            <span class="price-old">De R$ 9.997</span>
-                            <span class="price-new">R$ 4.997</span>
-                            <span class="price-note">ou 12x de R$ 499</span>
-                        </div>
-                    </div>
-                    <div class="package-features">
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Entrega em 15 dias</strong> - sistema completo funcionando</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Até 3 módulos principais</strong> - (ex: produtos, clientes, vendas)</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Painel administrativo básico</strong> - gerencie tudo sozinho</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Banco de dados (até 10 tabelas)</strong> - armazene todas as informações</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>API REST básica (até 10 endpoints)</strong> - integre com outros sistemas</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Autenticação segura</strong> - login e senha protegidos</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Dashboard simples com gráficos</strong> - veja seus números</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Hospedagem grátis</strong> - 1 ano incluso</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Suporte por 60 dias</strong> - ajustes e melhorias</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">⚠️</span>
-                            <span><strong>Módulos adicionais</strong> - R$ 1.500 cada</span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">⚠️</span>
-                            <span><strong>Integrações externas</strong> - orçamento à parte</span>
-                        </div>
-                    </div>
-                    <a href="https://wa.me/5511982500582?text=Olá!%20Quero%20o%20pacote%20Sistema%20Web%20Completo%20por%20R$%204.997" 
-                       class="btn-package" target="_blank">
-                       Quero Agora - 15 Dias
-                    </a>
-                    <p class="package-note">🎯 Ideal para empresas que precisam de automação</p>
-                </div>
-                <!-- Package 4: Sistema Web Personalizado-->
-                <div class="package-card premium">
-                    <div class="package-badge">💎 PREMIUM</div>
-                    <div class="package-header">
-                        <h3>💎 Sistema Web Personalizado</h3>
-                        <div class="package-price">
-                            <span class="price-old">De R$ 9.997</span>
-                            <span class="price-new">Sob Consulta</span>
-                            <span class="price-note">a partir de R$ 4.997</span>
-                        </div>
-                    </div>
-                    <div class="package-features">
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Análise de necessidades</strong></span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Proposta personalizada</strong></span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Desenvolvimento sob medida</strong></span>
-                        </div>
-                        <div class="feature">
-                            <span class="check">✔️</span>
-                            <span><strong>Suporte incluído</strong></span>
-                        </div>
-                    </div>
-
-                    <a href="https://wa.me/5511982500582?text=Olá!%20Quero%20o%20pacote%20Sistema%20Web%20Completo%20por%20R$%204.997" 
-                       class="btn-package" target="_blank">
-                       Solicitar Orçamento
-                    </a>
-                    <p class="package-note">🎯 Ideal para empresas que precisam de soluções sob medida</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits-section">
-        <div class="container">
-            <h2 class="section-title">Por Que Escolher a <span class="highlight">Prodev</span>?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Velocidade Real</h3>
-                    <p>7 dias não é promessa, é compromisso. Seu site no ar enquanto outros ainda estão "planejando"</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Zero Mensalidade</h3>
-                    <p>Pague uma vez, use para sempre. Sem pegadinhas, sem surpresas na fatura</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Foco em Resultado</h3>
-                    <p>Não fazemos sites bonitos que não aparecem. Fazemos sites que trazem clientes</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔧</div>
-                    <h3>Experiência Comprovada</h3>
-                    <p>10+ anos desenvolvendo sistemas para empresas internacionais. Seu projeto em boas mãos</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📱</div>
-                    <h3>100% Responsivo</h3>
-                    <p>Seu cliente acessa do celular, tablet ou PC. Sempre perfeito, sempre funcional</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🛡️</div>
-                    <h3>Garantia Real</h3>
-                    <p>SEO básico incluído - apareça quando buscarem pelo nome da sua empresa</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof -->
-    <section class="social-proof">
-        <div class="container">
-            <h2 class="section-title">Resultados Reais, Clientes Reais</h2>
-            <div class="proof-stats">
-                <div class="stat-item">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Sites Entregues</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">7</div>
-                    <div class="stat-label">Dias de Entrega</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Sem Mensalidade</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Anos de Experiência</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-section">
-        <div class="container">
-            <div class="testimonial-content">
-                <!-- <div class="testimonial-badge">
-                    <span>⭐ Cliente Real</span>
-                </div> -->
-                <h2 class="testimonial-title">Experiência Comprovada em <span class="highlight">Empresas Internacionais</span></h2>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="company-info">
-                            <div class="company-logo">
-                                <div class="logo-placeholder">🏦</div>
-                            </div>
-                            <div class="company-details">
-                                <h3>MoCaFi.com</h3>
-                                <p class="company-type">Fintech • Mobile Banking</p>
-                                <p class="company-location">Newark, New Jersey - Estados Unidos</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-badge-company">
-                            <span>Cliente Internacional</span>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-body">
-                        <div class="quote-icon">"</div>
-                        <p class="testimonial-text">
-                            Desenvolvemos sistemas backend críticos para uma das principais fintechs dos Estados Unidos, 
-                            trabalhando diretamente em projetos web e no aplicativo mobile da empresa. 
-                            <strong>Experiência real com tecnologia de ponta em ambiente de produção internacional.</strong>
-                        </p>
-                        <div class="testimonial-highlights">
-                            <div class="highlight-item">
-                                <span class="highlight-icon">💻</span>
-                                <span>Backend Development</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🌐</span>
-                                <span>Projetos Web</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">📱</span>
-                                <span>App Mobile</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🚀</span>
-                                <span>Produção Internacional</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="testimonial-footer">
-                        <div class="testimonial-meta">
-                            <p><strong>Projeto realizado através de:</strong></p>
-                            <p class="meta-company">Teravision Technologies • Miami, FL</p>
-                            <p class="meta-note">Outsourcing de Software Internacional</p>
-                        </div>
-                        <div class="testimonial-verify">
-                            <span class="verify-icon">✓</span>
-                            <span>Experiência verificável</span>
-                        </div>
-                    </div> -->
-                </div>
-                
-                <p class="testimonial-note">
-                    💡 <strong>Esta é a experiência que você leva para o seu projeto.</strong> 
-                    Não é teoria, é prática comprovada em empresas de alto nível.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Perguntas Frequentes</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Realmente entrega em 7 dias?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sim! 7 dias úteis é nosso compromisso. Começamos na segunda-feira e você tem seu site no ar na próxima segunda. Se atrasar, você não paga nada.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Por que não tem mensalidade?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Porque acreditamos que você deve pagar pelo resultado, não pela promessa. Você paga uma vez e o site é seu para sempre. A hospedagem básica é grátis.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>O site aparece no Google?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sim! Incluímos configuração básica de SEO. Se não aparecer quando buscarem pelo nome da sua empresa em 30 dias, devolvemos 100% do seu dinheiro.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Funciona no celular?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>100% responsivo! Testamos em todos os tamanhos de tela. Seu cliente acessa do iPhone, Android, tablet ou PC - sempre perfeito.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Posso pedir alterações depois?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sim! Incluímos 30 dias de suporte para ajustes e correções (não para modificações inteiras ou de design). Depois disso, alterações são cobradas separadamente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="cta-final">
-        <div class="container">
-            <h2>Pronto Para Ter Seu Site Profissional em 7 Dias?</h2>
-            <p>Enquanto você pensa, seus concorrentes já estão vendendo online</p>
-            <a href="https://wa.me/5511982500582?text=Olá!%20Quero%20fechar%20um%20pacote%20agora" 
-               class="btn-primary pulse" target="_blank">
-                Falar no WhatsApp Agora
-            </a>
-            <p class="cta-note">⚡ Resposta em até 15 minutos</p>
-        </div>
-    </section>
-
-    <!-- Disclaimer Section -->
-    <section class="disclaimer-section">
-        <div class="container">
-            <div class="disclaimer-content">
-                <h3>⚠️ Termos e Condições Importantes</h3>
-                <div class="disclaimer-grid">
-                    <div class="disclaimer-item">
-                        <strong>📋 Escopo do Projeto:</strong>
-                        <p>Os pacotes incluem apenas o que está especificado em cada card. Funcionalidades adicionais, mudanças de design após aprovação ou integrações não mencionadas serão cobradas separadamente.</p>
-                    </div>
-                    <div class="disclaimer-item">
-                        <strong>⏱️ Prazos:</strong>
-                        <p>Os prazos começam a contar após aprovação do briefing e pagamento da entrada (50%). Atrasos causados por falta de informações do cliente não contam no prazo de entrega.</p>
-                    </div>
-                    <div class="disclaimer-item">
-                        <strong>💰 Pagamento:</strong>
-                        <p>50% na contratação e 50% na entrega. Alterações após aprovação final serão cobradas conforme complexidade. Hospedagem grátis é básica (até 5GB de tráfego/mês).</p>
-                    </div>
-                    <div class="disclaimer-item">
-                        <strong>🔧 Suporte:</strong>
-                        <p>O suporte incluído cobre apenas correções de bugs e ajustes menores. Não inclui novas funcionalidades, redesign completo ou mudanças estruturais.</p>
-                    </div>
-                    <div class="disclaimer-item">
-                        <strong>🔍 SEO:</strong>
-                        <p>A garantia de aparecer no Google refere-se apenas a buscas pelo nome exato da empresa. Ranking para palavras-chave genéricas depende de fatores externos e não é garantido.</p>
-                    </div>
-                    <div class="disclaimer-item">
-                        <strong>📱 Responsividade:</strong>
-                        <p>Testado nos principais navegadores e dispositivos. Compatibilidade com versões muito antigas de navegadores não é garantida.</p>
-                    </div>
-                </div>
-                <p class="disclaimer-note">
-                    Ao contratar nossos serviços, você concorda com estes termos. Dúvidas? Fale conosco antes de fechar!
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/images/prodev_logo_limpa_1.png" alt="Agência Prodev - Criação de Sites Profissionais">
-                </div>
-                <div class="footer-info">
-                    <p><strong>Agência Prodev</strong></p>
-                    <p>Transformando ideias em resultados digitais</p>
-                    <p>São Paulo - SP, Brasil</p>
-                    <p>+55 11 98250-0582</p>
-                </div>
-                <div class="footer-social">
-                    <p class="social-title"><strong>Redes Sociais</strong></p>
-                    <a href="https://wa.me/5511982500582" target="_blank" class="social-link">WhatsApp</a>
-                    <!-- <a href="https://linkedin.com/in/tiago-mendes-developer/" target="_blank" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/tetigo" target="_blank" class="social-link">GitHub</a> -->
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Agência Prodev. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5511982500582?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20pacotes%20da%20Prodev" 
-       class="whatsapp-button" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Entre em contato via WhatsApp">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.372a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
+      </div>
+    </div>
+    
+    <a href="#servicos" class="scroll-indicator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
     </a>
+  </section>
 
-    <script src="assets/js/script.js"></script>
+  <!-- SERVICES -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <div class="services-header">
+        <h2 class="section-title" style="margin-bottom: 1rem;">
+          Nossos Serviços <span class="gradient-text">🚀</span>
+        </h2>
+        <p class="section-subtitle">
+          Soluções completas em tecnologia para transformar seu negócio
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="card-service">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop" alt="Software Sob Medida">
+            <div class="service-card-image-overlay"></div>
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+          </div>
+          <div class="service-card-content">
+            <h3>Software Sob Medida</h3>
+            <p>Sistemas personalizados que atendem exatamente suas necessidades de negócio</p>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="card-service">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=600&fit=crop" alt="Websites Profissionais">
+            <div class="service-card-image-overlay"></div>
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+          </div>
+          <div class="service-card-content">
+            <h3>Websites Profissionais</h3>
+            <p>Sites modernos, responsivos e otimizados para conversão</p>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="card-service">
+          <div class="service-card-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Automações N8N">
+            <div class="service-card-image-overlay"></div>
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+          </div>
+          <div class="service-card-content">
+            <h3>Automações</h3>
+            <p>Automatize processos e aumente produtividade com N8N</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <h2 class="section-title" style="margin-bottom: 1rem;">
+          Projetos <span class="gradient-text">Realizados</span>
+        </h2>
+        <p class="section-subtitle">
+          Conheça alguns dos projetos que desenvolvemos para nossos clientes, 
+          desde sistemas complexos até automações inteligentes.
+        </p>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card">
+          <span class="portfolio-badge">Concluído</span>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1556741533-411cf82e4e2d?w=600&h=450&fit=crop" alt="Backend para Fintech Internacional">
+            <div class="portfolio-image-overlay"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Backend para Fintech Internacional</h3>
+            <p>Sistema financeiro utilizado por milhares de usuários nos EUA</p>
+            <!-- <a href="#" class="portfolio-link">
+              Ver Projeto
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a> -->
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="portfolio-card">
+          <span class="portfolio-badge">Concluído</span>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop" alt="Sistema ERP Personalizado">
+            <div class="portfolio-image-overlay"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Sistema ERP Personalizado</h3>
+            <p>Plataforma completa de gestão empresarial desenvolvida para indústria de médio porte</p>
+            <!-- <a href="#" class="portfolio-link">
+              Ver Projeto
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a> -->
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="portfolio-card">
+          <span class="portfolio-badge">Concluído</span>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=450&fit=crop" alt="E-commerce Responsivo">
+            <div class="portfolio-image-overlay"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>E-commerce Responsivo</h3>
+            <p>Loja virtual completa com integração de pagamentos e gestão de estoque</p>
+            <!-- <a href="#" class="portfolio-link">
+              Ver Projeto
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a> -->
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="portfolio-card">
+          <span class="portfolio-badge">Concluído</span>
+          <div class="portfolio-image">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=450&fit=crop" alt="Automação de Marketing">
+            <div class="portfolio-image-overlay"></div>
+          </div>
+          <div class="portfolio-content">
+            <h3>Automação de Marketing</h3>
+            <p>Fluxos automatizados de email marketing e CRM integrado via N8N</p>
+            <!-- <a href="#" class="portfolio-link">
+              Ver Projeto
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="sobre" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Equipe Prodev">
+            <div class="about-image-overlay"></div>
+          </div>
+          <div class="about-decoration-1"></div>
+          <div class="about-decoration-2"></div>
+        </div>
+        
+        <div class="about-content">
+          <span class="badge-tag">Quem Somos</span>
+          <h2 class="section-title">
+            Especialistas em <span class="gradient-text">Transformação Digital</span>
+          </h2>
+          <p>
+            A Agência Prodev é especializada em criar soluções tecnológicas sob medida 
+            para empresas de todos os portes. Trabalhamos com as mais modernas tecnologias do mercado.
+          </p>
+          <p>
+            Desde sistemas complexos até automações inteligentes com N8N, entregamos 
+            projetos que realmente fazem a diferença no dia a dia dos nossos clientes. 
+            Cada solução é pensada estrategicamente para atender suas necessidades específicas.
+          </p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-value">50+</div>
+              <div class="stat-label">Projetos Entregues</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">98%</div>
+              <div class="stat-label">Satisfação</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">8+</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+          </div>
+          
+          <!-- <a href="#contato" class="btn-secondary">
+            Conheça Nossa História
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <h2 class="section-title">
+          O Que Nossos Clientes <span class="gradient-text">Dizem</span>
+        </h2>
+      </div>
+      
+      <div class="testimonial-content">
+        <div class="testimonial-rating">
+          <span class="testimonial-rating-value">4.9</span>
+          <div class="testimonial-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        
+        <blockquote class="testimonial-quote">
+          <p>"A Agência Prodev transformou completamente nosso processo de gestão. O sistema ERP desenvolvido por eles é intuitivo, robusto e atendeu todas as nossas necessidades. A equipe é extremamente profissional e sempre disponível."</p>
+        </blockquote>
+        
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Carlos Mendes">
+          <div class="testimonial-author-name">Gustavo Gomes</div>
+          <div class="testimonial-author-role">Gerente de Frontend - Fintech Internacional</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-decoration-1"></div>
+    <div class="cta-decoration-2"></div>
+    
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-content">
+          <span class="badge-tag">Pronto para começar?</span>
+          <h2 class="section-title">
+            Transforme <span class="gradient-text">Sua Ideia</span> Em Realidade
+          </h2>
+          <h3>Solicite um Orçamento Personalizado</h3>
+          <p>
+            Nossa equipe está pronta para entender suas necessidades e desenvolver 
+            a solução perfeita para seu negócio. Sem compromisso, totalmente gratuito.
+          </p>
+          <a href="#contato" class="btn-primary">
+            Falar com Especialista
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+        
+        <div class="cta-image">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Developer Working">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <div class="contact-header">
+        <span class="badge-tag">Entre em Contato</span>
+        <h2 class="section-title" style="margin-bottom: 1rem;">
+          Vamos Conversar Sobre <span class="gradient-text">Seu Projeto</span>
+        </h2>
+        <p class="section-subtitle">
+          Estamos prontos para transformar suas ideias em realidade. 
+          Preencha o formulário e nossa equipe entrará em contato em até 24 horas.
+        </p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Telefone</div>
+              <div class="contact-info-value">+55 (11) 95439-6120</div>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">contato@agenciaprodev.com.br</div>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Endereço</div>
+              <div class="contact-info-value">São Paulo, SP - Brasil</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <form class="contact-form" onsubmit="handleSubmit(event)"> -->
+        <form 
+          action="https://formsubmit.co/tetigo@gmail.com"
+          method="POST"
+          enctype="multipart/form-data"
+          class="contact-form"
+        >
+        <input type="hidden" name="_subject" value="Novo contato - Agencia Prodev">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://agenciaprodev.com.br/index.html?enviado=sucesso">
+        
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" name="name" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+            </div>
+            <div class="form-group">
+              <label for="service">Serviço de Interesse</label>
+              <select id="service" name="service">
+                <option value="">Selecione um serviço</option>
+                <option value="software">Software Sob Medida</option>
+                <option value="website">Website Profissional</option>
+                <option value="automation">Automação N8N</option>
+                <option value="consulting">Consultoria</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Conte-nos sobre seu projeto..." oninput="updateCharCount()"></textarea>
+            <div class="char-count"><span id="char-count">0</span>/500</div>
+          </div>
+          
+          <button type="submit" class="btn-primary">
+            Enviar Mensagem
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer-logo">
+        <div class="footer-logo-circle">
+          <img src="assets/images/prodev_logo_limpa_1.png" alt="Agência Prodev">
+        </div>
+        <span>Agência Prodev</span>
+      </a>
+      
+      <p class="footer-copyright">
+        © 2026 Agência Prodev. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/5511954396120?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Ag%C3%AAncia%20Prodev." target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contato via WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('active');
+    }
+    
+    // Character count for textarea
+    function updateCharCount() {
+      const textarea = document.getElementById('message');
+      const charCount = document.getElementById('char-count');
+      charCount.textContent = textarea.value.length;
+    }
+    
+    // Form submission
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
+    }
+  </script>
 </body>
 </html>
